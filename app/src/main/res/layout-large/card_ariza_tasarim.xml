@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardElevation="4dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewSorunBosluk"
+                android:layout_width="0dp"
+                android:layout_height="108dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="4dp"
+                android:text="Bulaşıcı birimi 206 numaralıoda ruh sağlığından kullanıyormuş yazıcıyı o yüzden şimdi onlarda yazdıramıyor pencere tarafındaki bilgisayar"
+                android:textAlignment="textEnd"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTarihBosluk"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciAdiBosluk" />
+
+            <ImageView
+                android:id="@+id/imageViewDurumRengi"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:background="@color/REDDEDILDI"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewBasPcAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Pc Adı : "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDurumRengi" />
+
+            <TextView
+                android:id="@+id/textViewBasIpAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="IP Adı :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBasPcAdi" />
+
+            <TextView
+                android:id="@+id/textViewBasKullaniciAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Kullanıcı Adı:"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBasIpAdi" />
+
+            <TextView
+                android:id="@+id/textViewBasSorun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Sorun :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBasKullaniciAdi" />
+
+            <TextView
+                android:id="@+id/textViewBasTarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:text="Tarih :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBasSorun" />
+
+            <TextView
+                android:id="@+id/textViewBasDurum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="1dp"
+                android:text="Durum :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBasTarih" />
+
+            <TextView
+                android:id="@+id/textViewPcAdiBosluk"
+                android:layout_width="245dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Baris"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/textViewBasPcAdi"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDurumRengi" />
+
+            <TextView
+                android:id="@+id/textViewIpAdiBosluk"
+                android:layout_width="245dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="24sp"
+                android:text="172.30.128.1"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/textViewBasIpAdi"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBasPcAdi" />
+
+            <TextView
+                android:id="@+id/textViewKullaniciAdiBosluk"
+                android:layout_width="245dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="23dp"
+                android:text="Baris"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/textViewBasKullaniciAdi"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIpAdiBosluk" />
+
+            <TextView
+                android:id="@+id/textViewTarihBosluk"
+                android:layout_width="245dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:text="10:29:12"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/textViewBasTarih"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSorunBosluk" />
+
+            <TextView
+                android:id="@+id/textViewDurumBosluk"
+                android:layout_width="245dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="1dp"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewBasDurum"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTarihBosluk" />
+
+            <ImageView
+                android:id="@+id/imageViewMoreButton"
+                android:layout_width="57dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/more_button" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

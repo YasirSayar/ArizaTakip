@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/islemBosFragment">
+
+    <fragment
+        android:id="@+id/islemBosFragment"
+        android:name="com.example.arizatakip_v1.islemBosFragment"
+        android:label="fragment_islem_bos"
+        tools:layout="@layout/fragment_islem_bos" />
+    <fragment
+        android:id="@+id/redTamamFragment"
+        android:name="com.example.arizatakip_v1.redTamamFragment"
+        android:label="fragment_red_tamam"
+        tools:layout="@layout/fragment_red_tamam" />
+</navigation>

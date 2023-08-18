@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "765963248030",
+    "project_id": "arizatakip-cfe03",
+    "storage_bucket": "arizatakip-cfe03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765963248030:android:7bedfba10c863d1177768f",
+        "android_client_info": {
+          "package_name": "com.example.arizatakip_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765963248030-cqdi4ked9el9p9am8f7bmk8h4frm3aj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvxqCvN_9G-gUjDyauyeZ72WFg3DTD_KM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765963248030-cqdi4ked9el9p9am8f7bmk8h4frm3aj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
